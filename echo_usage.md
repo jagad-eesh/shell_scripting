@@ -4,4 +4,6 @@
  - Display message
  - Display command output
  - display variable
- 
+  
+  echo "$(pwd)" (if you want execute any linux command echo "$(ls)")
+  `env` commnad execute default variable display
