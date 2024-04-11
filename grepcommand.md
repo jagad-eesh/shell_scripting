@@ -19,4 +19,29 @@ grep command is filter command, it is used to search a string in a given file.
     -C: to display N lines around match
     -r: to search under current directory and subdirectory
     -l: to display only file names
+    -h: to hide file names
+     advanced option:
+     -f: takes search string/pattern from file, one per line
+     -e: to search multiple strings/pattern
+     :pattern is string and it represents more than one string
+     -E: to work with patterns
+      grep -E[OPTIONS]"pattern" file/files
+      - xy|pq matches for xy or pq
+      - ^xyz matches for the lines which are starting with "xyz"
+      - xyz$ matches for the lines which are ending with "xyz"
+      - ^$ : matches for the lines which are empty
+      - \: to remove the special purpose of any symbol  EX:\^, \$
+      - . : means matches any one character
+      - \. : match exactly with .
+      - \b : matches empty string at the edge of word
+      - ? : the preceeding character is optional is optional and will be matched 
+       at most , once.
+     - * : the preceeding character will be matched zero or more times
+     - + : the preceeding character will be matched one or more times
+     - [xyz] matches for the lines which are having x or y or z
+     - [a-d] is equal to [abcd] matched for the lines which are having a/b/c/d
+     - [a-ds-z]is equal to [abcdstuvwxyz]
+
+
+
     ```
